@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="">
+    <b:Source>
+        <b:Year>2007</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Gameplay Design Patterns for Believable Non-Player Characters.</b:Title>
+        <b:Tag>lankoski2007gameplay</b:Tag>
+        <b:BookTitle>DiGRA Conference</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Lankoski</b:Last>
+                        <b:First>Petri</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Björk</b:Last>
+                        <b:First>Staffan</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>416–423</b:Pages>
+        <b:ConferenceName>DiGRA Conference</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2008</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Agents that relate: Improving the social believability of non-player characters in role-playing games</b:Title>
+        <b:Tag>afonso2008agents</b:Tag>
+        <b:BookTitle>International Conference on Entertainment Computing</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Afonso</b:Last>
+                        <b:First>Nuno</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Prada</b:Last>
+                        <b:First>Rui</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>34–45</b:Pages>
+        <b:ConferenceName>International Conference on Entertainment Computing</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2007</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Eight Ways Videogames Generate Emotion.</b:Title>
+        <b:Tag>frome2007eight</b:Tag>
+        <b:BookTitle>Digra conference</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Frome</b:Last>
+                        <b:First>Jonathan</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:ConferenceName>Digra conference</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2004</b:Year>
+        <b:Volume>5</b:Volume>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>A domain-independent framework for modeling emotion</b:Title>
+        <b:Publisher>Elsevier</b:Publisher>
+        <b:Tag>gratch2004domain</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Gratch</b:Last>
+                        <b:First>Jonathan</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Marsella</b:Last>
+                        <b:First>Stacy</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>269–306</b:Pages>
+        <b:JournalName>Cognitive Systems Research</b:JournalName>
+        <b:Number>4</b:Number>
+    </b:Source>
+    <b:Source>
+        <b:Year>2013</b:Year>
+        <b:Volume>7</b:Volume>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>MARC: a framework that features emotion models for facial animation during human–computer interaction</b:Title>
+        <b:Publisher>Springer</b:Publisher>
+        <b:Tag>courgeon2013marc</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Courgeon</b:Last>
+                        <b:First>Matthieu</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Clavel</b:Last>
+                        <b:First>Céline</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>311–319</b:Pages>
+        <b:JournalName>Journal on Multimodal User Interfaces</b:JournalName>
+        <b:Number>4</b:Number>
+    </b:Source>
+    <b:Source>
+        <b:Year>2009</b:Year>
+        <b:Volume>1</b:Volume>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>Simulation of the dynamics of nonplayer characters' emotions and social relations in games</b:Title>
+        <b:Publisher>IEEE</b:Publisher>
+        <b:Tag>ochs2009simulation</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Ochs</b:Last>
+                        <b:First>Magalie</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Sabouret</b:Last>
+                        <b:First>Nicolas</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Corruble</b:Last>
+                        <b:First>Vincent</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>281–297</b:Pages>
+        <b:JournalName>IEEE Transactions on Computational Intelligence and AI in Games</b:JournalName>
+        <b:Number>4</b:Number>
+    </b:Source>
+    <b:Source>
+        <b:Year>2005</b:Year>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>Maintaining optimal challenge in computer games through real-time physiological feedback</b:Title>
+        <b:Publisher>CRC Press</b:Publisher>
+        <b:Tag>liu2005maintaining</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Liu</b:Last>
+                        <b:Middle>Rani Nilanjan Sarkar Changchun</b:Middle>
+                        <b:First>Pramila</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>184</b:Pages>
+        <b:JournalName>Foundations of Augmented Cognition</b:JournalName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2005</b:Year>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>A cognitive psychological approach to gameplay emotions</b:Title>
+        <b:Tag>perron2005cognitive</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Perron</b:Last>
+                        <b:First>Bernard</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+    </b:Source>
+    <b:Source>
+        <b:Year>2008</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>An emergent framework for realistic psychosocial behaviour in non player characters</b:Title>
+        <b:Tag>bailey2008emergent</b:Tag>
+        <b:BookTitle>Proceedings of the 2008 Conference on Future Play: Research, Play, Share</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Bailey</b:Last>
+                        <b:First>Christine</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Katchabaw</b:Last>
+                        <b:First>Michael</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>17–24</b:Pages>
+        <b:ConferenceName>Proceedings of the 2008 Conference on Future Play: Research, Play, Share</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2006</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Automatic customization of non-player characters using players temperament</b:Title>
+        <b:Tag>gomez2006automatic</b:Tag>
+        <b:BookTitle>International Conference on Technologies for Interactive Digital Storytelling and Entertainment</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Gómez-Gauchı́a</b:Last>
+                        <b:First>Hector</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Peinado</b:Last>
+                        <b:First>Federico</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>241–252</b:Pages>
+        <b:ConferenceName>International Conference on Technologies for Interactive Digital Storytelling and Entertainment</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2011</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Biofeedback game design: using direct and indirect physiological control to enhance game interaction</b:Title>
+        <b:Tag>nacke2011biofeedback</b:Tag>
+        <b:BookTitle>Proceedings of the SIGCHI conference on human factors in computing systems</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Nacke</b:Last>
+                        <b:Middle>Erik</b:Middle>
+                        <b:First>Lennart</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Kalyn</b:Last>
+                        <b:First>Michael</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Lough</b:Last>
+                        <b:First>Calvin</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Mandryk</b:Last>
+                        <b:Middle>Lee</b:Middle>
+                        <b:First>Regan</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>103–112</b:Pages>
+        <b:ConferenceName>Proceedings of the SIGCHI conference on human factors in computing systems</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2005</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Creating reactive non player character artificial intelligence in modern video games</b:Title>
+        <b:Tag>gruenwoldt2005creating</b:Tag>
+        <b:BookTitle>Proceedings of the 2005 GameOn North America Conference</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Gruenwoldt</b:Last>
+                        <b:First>Leif</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Danton</b:Last>
+                        <b:First>Stephen</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Katchabaw</b:Last>
+                        <b:First>Michael</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>10–17</b:Pages>
+        <b:ConferenceName>Proceedings of the 2005 GameOn North America Conference</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2017</b:Year>
+        <b:Volume>9</b:Volume>
+        <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+        <b:SourceType>JournalArticle</b:SourceType>
+        <b:Title>A model of non-player character believability</b:Title>
+        <b:Publisher>Intellect</b:Publisher>
+        <b:Tag>warpefelt2017model</b:Tag>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Warpefelt</b:Last>
+                        <b:First>Henrik</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Verhagen</b:Last>
+                        <b:First>Harko</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>39–53</b:Pages>
+        <b:JournalName>Journal of Gaming &amp; Virtual Worlds</b:JournalName>
+        <b:Number>1</b:Number>
+    </b:Source>
+    <b:Source>
+        <b:Year>2017</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Dealing with the emotions of Non Player Characters</b:Title>
+        <b:Tag>baffa2017dealing</b:Tag>
+        <b:BookTitle>2017 16th Brazilian Symposium on Computer Games and Digital Entertainment (SBGames)</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Baffa</b:Last>
+                        <b:First>Augusto</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Sampaio</b:Last>
+                        <b:First>Pedro</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Feijó</b:Last>
+                        <b:First>Bruno</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Lana</b:Last>
+                        <b:First>Mauricio</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>76–87</b:Pages>
+        <b:ConferenceName>2017 16th Brazilian Symposium on Computer Games and Digital Entertainment (SBGames)</b:ConferenceName>
+    </b:Source>
+    <b:Source>
+        <b:Year>2003</b:Year>
+        <b:BIBTEX_Entry>inproceedings</b:BIBTEX_Entry>
+        <b:SourceType>ConferenceProceedings</b:SourceType>
+        <b:Title>Affective gaming: measuring emotion through the gamepad</b:Title>
+        <b:Tag>sykes2003affective</b:Tag>
+        <b:BookTitle>CHI'03 extended abstracts on Human factors in computing systems</b:BookTitle>
+        <b:Author>
+            <b:Author>
+                <b:NameList>
+                    <b:Person>
+                        <b:Last>Sykes</b:Last>
+                        <b:First>Jonathan</b:First>
+                    </b:Person>
+                    <b:Person>
+                        <b:Last>Brown</b:Last>
+                        <b:First>Simon</b:First>
+                    </b:Person>
+                </b:NameList>
+            </b:Author>
+        </b:Author>
+        <b:Pages>732–733</b:Pages>
+        <b:ConferenceName>CHI'03 extended abstracts on Human factors in computing systems</b:ConferenceName>
+    </b:Source>
+</b:Sources>
