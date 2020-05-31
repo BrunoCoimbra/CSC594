@@ -25,7 +25,7 @@
 
 (make-event-attack e1)
 (send [e1] put-eActor [A])
-(send [e1] put-eObserver [B])
+(send [e1] put-eObservers [B])
 (send [e1] put-eTarget [C])
 
 (run)

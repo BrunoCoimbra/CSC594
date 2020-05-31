@@ -1,10 +1,10 @@
 ;;; Character class defines a generic Event
 (defclass Event (is-a USER)
-    (slot eName)             ; Event name
-    (multislot eKind)        ; Event kind(s)
-    (multislot eActor)       ; Character(s) provoking the event
-    (multislot eTarget)      ; Character(s) toward which the event is directed
-    (multislot eObserver)    ; Character(s) observing the event
+    (slot eName)            ; Event name
+    (slot eKind)            ; Event kind(s)
+    (slot eActor)           ; Character(s) provoking the event
+    (slot eTarget)          ; Character(s) toward which the event is directed
+    (multislot eObservers)   ; Character(s) observing the event
 )
 
 ;;; Event class constructors
