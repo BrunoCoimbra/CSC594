@@ -45,3 +45,13 @@
         (cActionChannels voice body)
     )
 )
+
+;;; Utility functions
+(deffunction is-ally (?c ?t)
+    (bind ?rel (find-instance 
+        ((?r Relationship))
+        (and (eq ?r:rCharacter ?c) (eq ?r:rTarget ?t) 
+                (> ?r:rLevel 0)  (eq ?r:rKind binding))
+    ))
+    (return (> (length$ ?rel) 0))
+)
