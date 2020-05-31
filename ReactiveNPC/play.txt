@@ -1,0 +1,31 @@
+(clear)
+
+(load characters.clp)
+(load events.clp)
+(load rules.clp)
+
+(make-character-hero A)
+(send [A] put-cName Albus)
+(send [A] print)
+
+(make-character-hero B)
+(send [B] put-cName Berta)
+(send [B] print)
+
+(make-character-hero C)
+(send [C] put-cName Charlie)
+(send [C] print)
+
+(make-instance of Relationship
+    (rCharacter [B])
+    (rTarget [C])
+    (rKind binding)
+    (rLevel 0.50)
+)
+
+(make-event-attack e1)
+(send [e1] put-eActor [A])
+(send [e1] put-eObserver [B])
+(send [e1] put-eTarget [C])
+
+(run)
