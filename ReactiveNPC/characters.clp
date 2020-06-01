@@ -15,6 +15,8 @@
     (slot rKind (default non-binding))          ; Binding or non-binding
 )
 
+
+;;; Utility functions
 (deffunction set-relationship (?c ?t ?n)
     (bind ?cName (send ?c get-cName))
     (bind ?tName (send ?t get-cName))
@@ -29,6 +31,15 @@
             (rCharacter ?c) (rTarget ?t) (rLevel ?n)
         )
     )
+)
+
+(deffunction is-ally (?c ?t)
+    (bind ?rel (find-instance 
+        ((?r Relationship))
+        (and (eq ?r:rCharacter ?c) (eq ?r:rTarget ?t) 
+                (> ?r:rLevel 0)  (eq ?r:rKind binding))
+    ))
+    (return (> (length$ ?rel) 0))
 )
 
 
@@ -54,14 +65,4 @@
         (cStandards heroism)
         (cActionChannels voice body)
     )
-)
-
-;;; Utility functions
-(deffunction is-ally (?c ?t)
-    (bind ?rel (find-instance 
-        ((?r Relationship))
-        (and (eq ?r:rCharacter ?c) (eq ?r:rTarget ?t) 
-                (> ?r:rLevel 0)  (eq ?r:rKind binding))
-    ))
-    (return (> (length$ ?rel) 0))
 )
