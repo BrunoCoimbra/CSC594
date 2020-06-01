@@ -37,11 +37,21 @@
 ; This functions instantiate characters according to a template
 ;
 
+;; Pre-defined standards:
+;   heroism:
+;       - Aggressive to aggressors of innocents (non-enemies)
+
+(deffunction make-character-commoner (?id)
+    (make-instance ?id of Character
+        (cName Commoner)
+        (cActionChannels voice body)
+    )
+)
+
 (deffunction make-character-hero (?id)
     (make-instance ?id of Character
         (cName Hero)
-        (cStandards S1 S2 S3)
-        (cGoals G1 G2 G3)
+        (cStandards heroism)
         (cActionChannels voice body)
     )
 )

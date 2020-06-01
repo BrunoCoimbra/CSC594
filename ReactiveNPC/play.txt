@@ -1,21 +1,36 @@
+;;; ReactiveNPC Sample Story
+;
+; This is a sample story to illustrate the use of the ReactiveNPC framework
+; In this Story, Albus, who is a coward, attacks Casper unprovoked. Berta, a close
+; friend of Casper, gets angry at Albus because of it. Thankfully, Damian, our hero,
+; was there to defend Casper and drive Albus away.
+;
+
 (clear)
 
 (load characters.clp)
 (load events.clp)
 (load rules.clp)
 
-(make-character-hero A)
+;;; Characters declaration
+(make-character-commoner A)
 (send [A] put-cName Albus)
+(send [A] put-cStandards coward)
 (send [A] print)
 
-(make-character-hero B)
+(make-character-commoner B)
 (send [B] put-cName Berta)
 (send [B] print)
 
-(make-character-hero C)
-(send [C] put-cName Charlie)
+(make-character-commoner C)
+(send [C] put-cName Casper)
 (send [C] print)
 
+(make-character-hero D)
+(send [D] put-cName Damian)
+(send [D] print)
+
+;;; Relationships declaration
 (make-instance of Relationship
     (rCharacter [B])
     (rTarget [C])
@@ -23,9 +38,10 @@
     (rLevel 0.50)
 )
 
-(make-event-attack e1)
-(send [e1] put-eActor [A])
-(send [e1] put-eObservers [B])
-(send [e1] put-eTarget [C])
+;;; Events declaration
+(bind ?e (make-event-attack (gensym)))
+(send ?e put-eActor [A])
+(send ?e put-eObservers [B] [D])
+(send ?e put-eTarget [C])
 
 (run)
