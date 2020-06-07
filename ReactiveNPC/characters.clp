@@ -42,6 +42,14 @@
     (return (> (length$ ?rel) 0))
 )
 
+(deffunction has-standard (?c ?s)
+    (return (member$ ?s (send ?c get-cStandards)))
+)
+
+(deffunction has-channel (?c ?a)
+    (return (member$ ?a (send ?c get-cActionChannels)))
+)
+
 
 ;;; Character class constructors
 ;
@@ -64,5 +72,13 @@
         (cName Hero)
         (cStandards heroism)
         (cActionChannels voice body)
+    )
+)
+
+(deffunction make-character-vendor (?id)
+    (make-instance ?id of Character
+        (cName Vendor)
+        (cStandards seller)
+        (cActionChannels voice)
     )
 )

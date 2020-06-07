@@ -26,6 +26,53 @@
     (printout t (send ?a get-cName) " greets " (send ?t get-cName) crlf)
 )
 
+;;; Negotiate Event
+; The actor starts a negotiation with the target
+(deffunction make-event-negotiate (?id)
+    (make-instance ?id of Event
+        (eName negotiate)
+        (eKind neutral)
+    )
+)
+(defrule negotiate
+    (object (is-a Event) (eName negotiate) (eActor ?a) (eTarget ?t))
+    =>
+    (assert (negotiates ?a ?t))
+    (printout t (send ?a get-cName) " starts negotiation with " (send ?t get-cName) crlf)
+)
+
+;;; Negotiation Succeeds Event
+; The actor's negotiation with the target succeeds
+(deffunction make-event-negotiation-succeeds (?id)
+    (make-instance ?id of Event
+        (eName negotiation-succeeds)
+        (eKind positive)
+    )
+)
+(defrule negotiation-succeeds
+    (object (is-a Event) (eName negotiation-succeeds) (eActor ?a) (eTarget ?t))
+    ?f <- (negotiates ?a ?t)
+    =>
+    (retract ?f)
+    (printout t (send ?a get-cName) "'s negotiation with " (send ?t get-cName) " succeeds" crlf)
+)
+
+;;; Negotiation Fails Event
+; The actor's negotiation with the target succeeds
+(deffunction make-event-negotiation-fails (?id)
+    (make-instance ?id of Event
+        (eName negotiation-fails)
+        (eKind negative)
+    )
+)
+(defrule negotiation-succeeds
+    (object (is-a Event) (eName negotiation-fails) (eActor ?a) (eTarget ?t))
+    ?f <- (negotiates ?a ?t)
+    =>
+    (retract ?f)
+    (printout t (send ?a get-cName) "'s negotiation with " (send ?t get-cName) " fails" crlf)
+)
+
 ;;; Attack Event
 ; The actor attacks the target
 (deffunction make-event-attack (?id)
@@ -37,5 +84,12 @@
 (defrule attack
     (object (is-a Event) (eName attack) (eActor ?a) (eTarget ?t))
     =>
-    (printout t (send ?a get-cName) " attacks " (send ?t get-cName) crlf)
+    (if (has-channel ?a body) then
+        (printout t (send ?a get-cName) " attacks " (send ?t get-cName) crlf)
+        (return)
+    )
+    (if (has-channel ?a voice) then
+        (printout t (send ?a get-cName) " curses " (send ?t get-cName) crlf)
+        (return)
+    )
 )

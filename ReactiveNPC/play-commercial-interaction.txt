@@ -1,0 +1,28 @@
+(clear)
+
+(load characters.clp)
+(load events.clp)
+(load rules.clp)
+
+;;; Characters declaration
+(make-character-vendor A)
+(send [A] put-cName Albert)
+(send [A] print)
+
+(make-character-commoner B)
+(send [B] put-cName Bart)
+(send [B] print)
+
+;;; Events declaration
+(bind ?e (make-event-greet (gensym)))
+(send ?e put-eActor [B])
+(send ?e put-eTarget [A])
+
+(run)
+
+;;; Resolution Events declaration
+(bind ?e (make-event-negotiation-succeeds (gensym)))
+(send ?e put-eActor [A])
+(send ?e put-eTarget [B])
+
+(run)
