@@ -55,6 +55,10 @@
     =>
     (retract ?f)
     (printout t (send ?a get-cName) "'s negotiation with " (send ?t get-cName) " succeeds" crlf)
+    (if (has-standard ?a seller) then
+        (printout t (send ?a get-cName) "'s mood improve with the negotiation" crlf)
+        (set-mood ?a +0.3)
+    )
 )
 
 ;;; Negotiation Fails Event
@@ -65,7 +69,7 @@
         (eKind negative)
     )
 )
-(defrule negotiation-succeeds
+(defrule negotiation-fails
     (object (is-a Event) (eName negotiation-fails) (eActor ?a) (eTarget ?t))
     ?f <- (negotiates ?a ?t)
     =>

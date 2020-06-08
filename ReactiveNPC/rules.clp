@@ -5,6 +5,7 @@
     (object (is-a Event)
         (eActor ?a) (eTarget ?t) (eKind aggressive))
     =>
+    (set-mood ?t -0.5)
     (set-relationship ?t ?a -0.05)
     (printout t
         (send ?t get-cName) " gets angry at " (send ?a get-cName) crlf)
@@ -15,6 +16,8 @@
     (object (is-a Event)
         (eActor ?a) (eTarget ?t) (eKind positive))
     =>
+    (set-mood ?a +0.1)
+    (set-mood ?t +0.1)
     (set-relationship ?a ?t +0.01)
     (printout t
         (send ?t get-cName) " gets pleased at " (send ?a get-cName) crlf)
@@ -26,14 +29,31 @@
 ; A characters involved in negative interactions get displeased at each other
 (defrule dislikes-negative-interaction
     (object (is-a Event)
-        (eActor ?a) (eTarget ?t) (eKind negative))
+        (eActor ?a) (eTarget ?t) (eObservers $?O) (eKind negative))
     =>
+    (set-mood ?a -0.1)
+    (set-mood ?t -0.1)
     (set-relationship ?a ?t -0.01)
     (printout t
         (send ?t get-cName) " gets displeased at " (send ?a get-cName) crlf)
     (set-relationship ?t ?a -0.01)
     (printout t
         (send ?a get-cName) " gets displeased at " (send ?t get-cName) crlf)
+    (if (in-bad-mood ?a) then
+        (printout t (send ?a get-cName) " is in a bad mood" crlf)
+        (bind ?e (make-event-attack (gensym)))
+        (send ?e put-eActor ?a)
+        (send ?e put-eObservers ?O)
+        (send ?e put-eTarget ?t)
+    )
+    (if (in-bad-mood ?t) then
+        (printout t (send ?t get-cName) " is in a bad mood" crlf)
+        (bind ?e (make-event-attack (gensym)))
+        (send ?e put-eActor ?t)
+        (send ?e put-eObservers ?O)
+        (send ?e put-eTarget ?a)
+    )
+    )
 )
 
 ; A character gets angry at an ally's aggressor
@@ -43,6 +63,7 @@
     =>
     (foreach ?o ?O
         (if (is-ally ?o ?t) then
+            (set-mood ?t -0.3)
             (set-relationship ?o ?a -0.03)
             (printout t
                 (send ?o get-cName) " gets angry at " (send ?a get-cName)
@@ -90,7 +111,7 @@
     (object (is-a Event)
         (eActor ?a) (eTarget ?t) (eKind aggressive))
     =>
-    (if (member$ coward (send ?t get-cStandards)) then
+    (if (has-standard ?t coward) then
         (printout t (send ?t get-cName) " runs from " (send ?a get-cName) crlf)
     )
 )

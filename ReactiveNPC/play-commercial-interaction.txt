@@ -1,3 +1,12 @@
+;;; ReactiveNPC Sample Story
+;
+; This is a sample story to illustrate the use of the ReactiveNPC framework.
+; In this Story, the vendor Albert, who is not in a very good mood is greeted by the
+; commoner Bart. As a vendor, Albert engages in negotiation with Bart after greeting
+; him back. When the negotiation succeeds, Albert mood significantly improves, but he's
+; still not happy.
+;
+
 (clear)
 
 (load characters.clp)
@@ -7,6 +16,7 @@
 ;;; Characters declaration
 (make-character-vendor A)
 (send [A] put-cName Albert)
+(send [A] put-cMood -0.7)
 (send [A] print)
 
 (make-character-commoner B)
@@ -24,5 +34,9 @@
 (bind ?e (make-event-negotiation-succeeds (gensym)))
 (send ?e put-eActor [A])
 (send ?e put-eTarget [B])
+
+;(bind ?e (make-event-negotiation-fails (gensym)))
+;(send ?e put-eActor [A])
+;(send ?e put-eTarget [B])
 
 (run)

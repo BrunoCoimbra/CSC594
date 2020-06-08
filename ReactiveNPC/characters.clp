@@ -1,10 +1,10 @@
 ;;; Character class defines a generic character
 (defclass Character (is-a USER)
-    (slot cName)                ; Character name
-    (slot cMood (default 0))    ; Character current mood
-    (multislot cStandards)      ; Principles and beliefs
-    (multislot cGoals)          ; Current objectives
-    (multislot cActionChannels) ; Channels through which the character acts
+    (slot cName)                                ; Character name
+    (slot cMood (default 0) (range -1.0 1.0))   ; Character current mood
+    (multislot cStandards)                      ; Principles and beliefs
+    (multislot cGoals)                          ; Current objectives
+    (multislot cActionChannels)                 ; Channels through which the character acts
 )
 
 ;;; Relationship class represents the opinion of a character towards another
@@ -33,6 +33,11 @@
     )
 )
 
+(deffunction set-mood (?c ?n)
+    (bind ?cName (send ?c get-cName))
+    (send ?c put-cMood (+ (send ?c get-cMood) ?n))
+)
+
 (deffunction is-ally (?c ?t)
     (bind ?rel (find-instance 
         ((?r Relationship))
@@ -48,6 +53,14 @@
 
 (deffunction has-channel (?c ?a)
     (return (member$ ?a (send ?c get-cActionChannels)))
+)
+
+(deffunction in-good-mood (?c)
+    (return (> (send ?c get-cMood) 0.5))
+)
+
+(deffunction in-bad-mood (?c)
+    (return (< (send ?c get-cMood) -0.5))
 )
 
 

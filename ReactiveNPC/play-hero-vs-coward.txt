@@ -1,6 +1,6 @@
 ;;; ReactiveNPC Sample Story
 ;
-; This is a sample story to illustrate the use of the ReactiveNPC framework
+; This is a sample story to illustrate the use of the ReactiveNPC framework.
 ; In this Story, Albus, who is a coward, attacks Casper unprovoked. Berta, a close
 ; friend of Casper, gets angry at Albus because of it. Thankfully, Damian, our hero,
 ; was there to defend Casper and drive Albus away.
